@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup and Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Signup & Login</h2>
+
+        <!-- Signup Form -->
+        <div id="signup-form-container">
+            <h3>Sign Up</h3>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="signup-email">Email:</label>
+                    <input type="email" id="signup-email" name="signup-email" placeholder="Enter your email" />
+                    <span class="error" id="signup-email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password:</label>
+                    <input type="password" id="signup-password" name="signup-password" placeholder="Enter your password" />
+                    <span class="error" id="signup-password-error"></span>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p id="signup-status" class="status"></p>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form-container" style="display: none;">
+            <h3>Log In</h3>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" name="login-email" placeholder="Enter your email" />
+                    <span class="error" id="login-email-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" name="login-password" placeholder="Enter your password" />
+                    <span class="error" id="login-password-error"></span>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <p id="login-status" class="status"></p>
+        </div>
+
+        <button id="toggle-form">Already have an account? Log In</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
